@@ -274,3 +274,32 @@ body > *:not(header):not(footer) {
 header, footer {
     width: 100%;
 }
+
+/* Title Link Styles */
+.title-link {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.title-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+/* Maintain heading styles */
+h1 .title-link {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .title-link {
+        padding: 0.3rem 0.8rem;
+    }
+}
