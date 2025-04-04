@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wellness Hub - Discussion Board</title>
+    <script defer src="js/discussion.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Wellness Hub</h1>
+    <nav>
+        <ul>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="discussion.html">Discussion Board</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="register.html">Sign Up</a></li>
+            <li><a href="login.html">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>Discussion Board</h2>
+    
+    <div id="postFormContainer">
+        <h3>Create a Post</h3>
+        <form id="postForm">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" required><br><br>
+
+            <label for="category">Category:</label><br>
+            <select id="category" required>
+                <option value="">--Choose a category--</option>
+                <option value="Fitness">Fitness</option>
+                <option value="Diet">Diet</option>
+                <option value="Health">Health</option>
+            </select><br><br>
+
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" required><br><br>
+
+            <label for="content">Content:</label><br>
+            <textarea id="content" rows="4" required></textarea><br><br>
+
+            <button type="submit">Post</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div id="featuredPost">
+        <h3>Featured Post</h3>
+        <div class="post">
+            <strong>Alex</strong> - <em>Fitness</em><br>
+            <strong>Staying Motivated</strong>
+            <p>How do you all stay motivated to work out regularly? I keep falling off after a couple of weeks.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="postList">
+        <h3>Threads</h3>
+
+        <!-- Fitness Thread -->
+        <div id="fitnessThread" class="thread">
+            <h4>Fitness</h4>
+            <div class="post">
+                <strong>John</strong> - <em>Fitness</em><br>
+                <strong>How to Build Muscle</strong>
+                <p>I'm looking for tips to build muscle. What's your go-to workout routine?</p>
+            </div>
+        </div>
+
+        <!-- Diet Thread -->
+        <div id="dietThread" class="thread">
+            <h4>Diet</h4>
+            <div class="post">
+                <strong>Sara</strong> - <em>Diet</em><br>
+                <strong>Best Foods for Weight Loss</strong>
+                <p>What are some of the best foods to include in your diet for weight loss?</p>
+            </div>
+        </div>
+
+        <!-- Health Thread -->
+        <div id="healthThread" class="thread">
+            <h4>Health</h4>
+            <div class="post">
+                <strong>David</strong> - <em>Health</em><br>
+                <strong>Improving Mental Health</strong>
+                <p>How can I improve my mental health on a daily basis? Any tips for staying positive?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Wellness Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
