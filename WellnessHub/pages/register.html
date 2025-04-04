@@ -3,25 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Register - Wellness Hub</title>
 </head>
 <body>
-    <h2>Register</h2>
+
+<header>
+    <h1>Wellness Hub</h1>
+    <nav>
+        <ul>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="discussion.html">Discussion Board</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="register.html">Sign Up</a></li>
+            <li><a href="login.html">Sign In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Create an Account</h2>
     <form id="registerForm">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required><br>
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
 
-        <input type="submit" value="Register">
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+        <button type="submit">Register</button>
     </form>
+    <p>Already have an account? <a href="login.html">Sign in here</a>.</p>
+</main>
 
-    <p id="successMessage" style="display: none; color: green;">Registration Successful!</p>
+<footer>
+    <p>© 2025 Wellness Hub. All rights reserved.</p>
+</footer>
 
-    <script src="../js/register.js"></script> <!-- Link to external JS file -->
+<!-- Link to external JavaScript -->
+<script src="js/register.js"></script>
+
 </body>
 </html>

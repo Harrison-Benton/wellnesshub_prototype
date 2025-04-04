@@ -1,9 +1,22 @@
-document.getElementById("registerForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevents the page from reloading
+document.getElementById("registerForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-    // Show the success message
-    document.getElementById("successMessage").style.display = "block";
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const confirmPassword = document.getElementById("confirmPassword").value.trim();
 
-    // Optionally, clear the form fields
-    document.getElementById("registerForm").reset();
+    if (!name || !email || !password || !confirmPassword) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return;
+    }
+
+    // Simulate successful registration
+    alert("Registration successful!");
+    window.location.href = "index.html";
 });
