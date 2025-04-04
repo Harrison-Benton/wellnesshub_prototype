@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #325DAD;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav li a {
+    display: inline-block;
+    background-color: white;
+    color: #325DAD;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+nav li a:hover {
+    background-color: #325DAD;
+    color: white;
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+}
+
+section:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+section h2 {
+    color: #325DAD;
+    font-size: 2rem;
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+section h3 {
+    color: #325DAD;
+    font-size: 1.8rem;
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+section h4 {
+    color: #325DAD;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Featured Articles Grid */
+section > div {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Button Styles */
+button, .btn {
+    background-color: #325DAD;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+button:hover, .btn:hover {
+    background-color: #2a4f9a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(50, 93, 173, 0.3);
+}
+
+/* ===== Enhanced Form Controls ===== */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #325DAD;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #325DAD;
+    box-shadow: 0 0 0 3px rgba(50, 93, 173, 0.2);
+}
+
+/* Checkboxes and Radio Buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Search Input */
+.search-container {
+    position: relative;
+    max-width: 500px;
+    margin: 1rem 0;
+}
+
+.search-container input[type="search"] {
+    padding-left: 3rem;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23325DAD"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 001.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 00-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 005.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+    background-size: 1.2rem;
+}
+
+/* Form Validation */
+input:invalid {
+    border-color: #e74c3c;
+}
+
+input:valid {
+    border-color: #2ecc71;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    display: none;
+}
+
+input:invalid + .error-message {
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #325DAD;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav li a {
+        display: block;
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    input, textarea, select {
+        padding: 0.7rem;
+    }
+}
+
+/* Accessibility Improvements */
+a, button {
+    font-size: 1.1rem;
+}
+
+p, li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Contrast for better readability */
+a {
+    color: #325DAD;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add this to your existing CSS */
+body > *:not(header):not(footer) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Keep header/footer full-width */
+header, footer {
+    width: 100%;
+}
